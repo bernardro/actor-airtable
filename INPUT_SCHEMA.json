@@ -15,7 +15,7 @@
             "type": "array",
             "title": "Apify Dataset Fields",
             "description": "The fields to fetch from the dataset; to fetch all fields leave blank",
-            "editor": "requestListSources",
+            "editor": "stringList",
             "minItems": 1,
             "uniqueItems": true,
             "nullable": true
