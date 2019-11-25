@@ -1,12 +1,13 @@
-![Apify Airtable Integration](https://repository-images.githubusercontent.com/222724235/eaa5ff00-0abf-11ea-9a97-626f78e13d9a?raw=true "Apify Airtable Integration")
+![Apify Airtable Integration](https://user-images.githubusercontent.com/53663510/69981644-b9d2ba80-1500-11ea-9f85-2363a0a10a87.jpg "Apify Airtable Integration")
 
 # Actor Airtable
 
 Airtable is a user friendly online database management system.
 Its main selling points are:
-- Similarity to Microsoft Excel with a user friendly interface that does most of the work for you
-- Ability to configure it for any kind of use-case
+- Similarity to Microsoft Excel with a user friendly interface that hides complexity from users
+- Ability to configure it for a large number of use-cases
 - Large number of integrations with other popular business apps for importing/exporting data
+- Support for common tasks such as collecting(via forms), grouping(e.g rollups) and presenting(views) data
 
 This is an Apify actor that allows us to import and export data to and from Apify datasets.
 This enables use to, for instance, scrape data and send it right into Airtable for further processing.
