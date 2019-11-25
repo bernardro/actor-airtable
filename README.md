@@ -99,8 +99,5 @@ Typical usage on Apify platform is shown below:
 
 | Resource | Average | Max |  
 | ----- | ---- | ----------- |  
-| Memory | 459.6 MB | 894.7 MB |  
-| CPU | 64% | 253% |  
-
-
-
+| Memory | 54.3 MB | 87.3 MB |  
+| CPU | 2% | 81% |  
