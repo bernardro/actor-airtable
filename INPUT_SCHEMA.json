@@ -1,0 +1,109 @@
+{
+    "title": "actor-airtable",
+    "description": "Input schema for actor-airtable",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "datasetId": {
+            "type": "string",
+            "title": "Apify Dataset Id",
+            "description": "The id of the apify dataset",
+            "editor": "textfield",
+            "pattern": "[a-zA-Z0-0]+"
+        },
+        "fields": {
+            "type": "array",
+            "title": "Apify Dataset Fields",
+            "description": "The fields to fetch from the dataset; to fetch all fields leave blank",
+            "editor": "requestListSources",
+            "minItems": 1,
+            "uniqueItems": true,
+            "nullable": true
+        },
+        "primaryKey": {
+            "type": "string",
+            "title": "Primary Key Field",
+            "description": "The field to be used as a primary key",
+            "editor": "textfield",
+            "pattern": "[a-zA-Z0-0]+"
+        },
+        "maxItems": {
+            "type": "integer",
+            "title": "Max Apify Records",
+            "description": "Maximum number of records to pull from apify dataset; to fetch all records leave blank",
+            "default": 100,
+            "editor": "number",
+            "prefill": 100,
+            "maximum": 999,
+            "minimum": 1
+        },
+        "tableName": {
+            "type": "string",
+            "title": "Table Name",
+            "description": "Name of destination table",
+            "editor": "textfield",
+            "pattern": "[a-zA-Z0-9]+",
+            "sectionCaption": "Airtable",
+            "sectionDescription": "Airtable parameters"
+        },
+        "baseId": {
+            "type": "string",
+            "title": "Airtable Base Id",
+            "description": "The Airtable baseId",
+            "editor": "textfield",
+            "pattern": "[a-zA-Z0-9]+"
+        },
+        "rawData": {
+            "type": "object",
+            "title": "Raw Input Data",
+            "description": "Data Records in JSON format",
+            "editor": "json",
+            "default": {},
+            "prefill": {},
+            "nullable": true,
+            "sectionCaption": "Advanced",
+            "sectionDescription": "Advanced Options"
+        },
+        "updateMode": {
+            "type": "boolean",
+            "title": "Update Records",
+            "description": "Update records if they already exist, otherwise insert",
+            "default": false,
+            "editor": "checkbox"
+        },
+        "destructiveUpdate": {
+            "type": "boolean",
+            "title": "Destructive Record Update",
+            "description": "If a matching record is found during export the entire row is completely replaced; if set to false only update changed fields",
+            "default": false,
+            "editor": "checkbox"
+        },
+        "clearHistory": {
+            "type": "boolean",
+            "title": "Clear Export History",
+            "description": "Keep track of export statistics; when set to true only records that previously failed will be re-attempted in subsequent runs (assuming the input data is corrected and new datasetId provided)",
+            "default": true,
+            "editor": "checkbox"
+        },
+        "apiKey": {
+            "type": "string",
+            "title": "API Key",
+            "description": "The Airtable API KEY",
+            "editor": "textfield",
+            "pattern": "[a-zA-Z0-9]+"
+        },
+        "verboseLog": {
+            "type": "boolean",
+            "title": "Verbose",
+            "description": "Verbose Logging",
+            "default": true,
+            "editor": "checkbox"
+        }
+    },
+    "required": [
+        "datasetId",
+        "baseId",
+        "apiKey",
+        "tableName"
+    ]
+}

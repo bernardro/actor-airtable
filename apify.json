@@ -1,0 +1,10 @@
+{
+	"name": "actor-airtable",
+	"version": "0.0",
+	"buildTag": "latest",
+	"env": {
+        "APIFY_USER_ID": "@myuserid",
+        "APIFY_TOKEN": "@mytoken"
+    },
+	"template": "hello_world"
+}

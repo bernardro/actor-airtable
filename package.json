@@ -1,0 +1,44 @@
+{
+    "name": "actor-airtable",
+    "version": "0.0.1",
+    "description": "Actor to integrate with Airtable",
+    "keywords": [
+        "apify",
+        "apifier",
+        "airtable"
+    ],
+    "dependencies": {
+        "airtable": "^0.7.2",
+        "apify": "^0.16.0",
+        "apify-client": "^0.5.22",
+        "bluebird": "^3.7.1",
+        "help": "^3.0.2",
+        "moment": "^2.24.0",
+        "object-hash": "^2.0.0"
+    },
+    "devDependencies": {
+        "@apify/eslint-config": "0.0.3",
+        "chai": "^4.2.0",
+        "eslint": "^6.5.1",
+        "mocha": "^6.2.2",
+        "sinon": "^7.5.0"
+    },
+    "scripts": {
+        "start": "node src/main.js",
+        "apify": "apify run",
+        "test": "mocha test/utility_spec.js"
+    },
+    "author": "bernardo@sonkomail.com",
+    "contributors": [
+        "Bernard Okoth <bernardo@sonkomail.com>"
+    ],
+    "license": "Apache-2.0",
+    "homepage": "https://github.com/bernardro/actor-airtable",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/bernardro/actor-airtable.git"
+    },
+    "bugs": {
+        "url": "https://github.com/bernardro/actor-airtable/issues"
+    }
+}
